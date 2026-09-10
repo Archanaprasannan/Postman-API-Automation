@@ -173,6 +173,10 @@ Replace the collection and environment IDs with the appropriate values.
 The collection can be executed using Postman CLI and test results can be generated for automation runs.
 
 HTML reporting can also be generated for test execution results.
+To run the collection and get the report:
+postman collection run "<collection-id>" 
+-e "<environment-id>" 
+--env-var "base_url=https://api.eventhub.rahulshettyacademy.com/api" -r html --reporter-html-export reports\postman-report.html
 
 ## Future Enhancements
 
